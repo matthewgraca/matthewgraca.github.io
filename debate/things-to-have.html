@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Debate Resources</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+  .w3-sidebar {
+    z-index: 3;
+    width: 250px;
+    top: 43px;
+    bottom: 0;
+    height: inherit;
+  }
+  </style>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+        <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+        <a href="home.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
+        <a href="things-to-have.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Things to Have</a>
+        <a href="online-resources" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Online Resources</a>
+        <a href="novice-center.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Novice Center</a>
+      </div>
+    </div>
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+      <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <h4 class="w3-bar-item"><b>Menu</b></h4>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#materials">Materials</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="#software">Software</a>
+    </nav>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+      <div class="w3-row w3-padding-64">
+        <div class="w3-twothird w3-container">
+          <h1 class="w3-text-teal">Things to have</h1>
+            <p>Most of these things are just nice to have. I would say that the only thing that is strictly required is Verbatim, but everything else is really up to preference.</p>
+          <h2 class="w3-text-teal" id="materials">Materials</h2>
+            <a href="https://www.amazon.com/Tabletote-Portable-Lightweight-Adjustable-Notebook/dp/B005IXSXPI/" target="_blank">Table tote</a>
+            <br>
+            <a href="https://www.amazon.com/HP-Printer-Paper-Office20-8-5x14/dp/B00006L389/" target="_blank">Paper (get something stylish like blue paper</a>
+            <br>
+            <a href="https://www.amazon.com/Pilot-Retractable-Premium-Roller-31277/dp/B0017TMMLS" target="_blank">Ultra fine point pens wow</a>
+            <br>
+            <a href="https://gd.image-gmkt.com/li/754/667/1198667754.g_520-w-et_g.jpg" target="_blank">Swaggiest timers known to man. go to the local daiso on Las Tunas</a>
+          <h2 class="w3-text-teal" id="software">Software</h2>
+            <a href="https://paperlessdebate.com/verbatim/" target="_blank">Verbatim: the only truly required item on this list. software that makes debate card cutting and document managing infinitely easy</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
