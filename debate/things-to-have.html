@@ -22,9 +22,9 @@
     <div class="w3-top">
       <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-        <a href="home.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Home</a>
-        <a href="things-to-have.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Useful Links</a>
-        <a href="novice-center.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Novice Center</a>
+        <a href="#things-to-have" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Things To Have</a>
+        <a href="#online-resources" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Online Resources</a>
+        <a href="#discord" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Discord Invite</a>
       </div>
     </div>
     <!-- Sidebar -->
@@ -33,9 +33,10 @@
         <i class="fa fa-remove"></i>
       </a>
       <h4 class="w3-bar-item"><b>Contents</b></h4>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#things-to-have">Things to Have</a>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#online-resources">Online Resources</a>
-      <a class="w3-bar-item w3-button w3-hover-black" href="#discord">Discord Invite</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="home.html">Home</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="things-to-have.html">Useful Links</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="novice-center.html">Novice Center</a>
+      <a class="w3-bar-item w3-button w3-hover-black" href="lecture.html">Lecture Items</a>
     </nav>
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -72,5 +73,29 @@
         </div>
       </div>
     </div>
+    <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+    </script>
   </body>
 </html>
